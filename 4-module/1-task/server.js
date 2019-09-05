@@ -7,7 +7,6 @@ const server = new http.Server();
 
 server.on('request', (req, res) => {
   const pathname = url.parse(req.url).pathname.slice(1);
-  // console.log(pathname);
   const filepath = path.join(__dirname, 'files', pathname);
 
 
