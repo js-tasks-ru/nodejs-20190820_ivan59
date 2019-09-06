@@ -26,7 +26,7 @@ server.on('request', (req, res) => {
           return;
         }
 
-        const lss = new LimitSizeStream({ limit: 1048579 });
+        const lss = new LimitSizeStream({limit: 1048579});
         const ws = fs.createWriteStream(filepath);
 
         req
