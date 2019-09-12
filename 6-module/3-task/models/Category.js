@@ -17,4 +17,5 @@ const categorySchema = new mongoose.Schema({
   subcategories: [subCategorySchema],
 });
 
+
 module.exports = connection.model('Category', categorySchema);
